@@ -19,7 +19,6 @@ int main() {
 	
 		ulangi="n";
 		cout<<"Nama : ";
-		cin.ignore();
 		getline(cin, nama);
 		cout<<"Kamu ingin masuk ke jurusan apa?\n(IPA/IPS/Bahasa) : "; cin>>pilihan;
 		cout<<"Masukkan nilaimu pada tiap pelajaran ini : "<<endl;
@@ -44,6 +43,7 @@ int main() {
 		cout<<"Kami menyarankan kamu untuk "<<saran<<" Semoga kamu berkenan menerimanya.\n"<<endl;			//mengeluarkan saran dari hasil perbandingan
 		cout<<"Apakah anda ingin mengulanginya lagi?(y/n)"<<endl; cin>>ulangi;
 		system("CLS");
+		cin.ignore();
 	}
 	cout<<"\nTerima kasih telah menggunakan layanan kami.\nCopyright 2021 - Aris Mahmudi\a"<<endl;
 	return 0;
